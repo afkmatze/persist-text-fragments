@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "moduleResolution": "node",
     "declaration": true,
     "noEmitHelpers": false,
@@ -20,10 +20,14 @@
     "suppressImplicitAnyIndexErrors": true,
     "outDir": "dist",
     "lib": ["es6", "dom"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "types",
+    "typeRoots": [
+      "types"
+    ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/index.ts"
   ],
   "exclude": [
   ]
