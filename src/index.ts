@@ -3,7 +3,10 @@ import * as cuid from 'cuid'
 import { 
   FramgentMarkerOptions, 
   FramgentMarkerTagOptions, 
-  MarkerPair } from './interfaces'
+  MarkerPair 
+} from './interfaces'
+
+export * from './interfaces'
 
 export const defaultTag:FramgentMarkerTagOptions = {
   head: '{{',

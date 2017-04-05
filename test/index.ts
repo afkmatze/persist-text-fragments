@@ -1,6 +1,6 @@
 import 'mocha'
 import { expect } from 'chai'
-import { CBMarker } from '../src'
+import { CBMarker } from '../dist'
 
 describe ('marker' , () => {
 

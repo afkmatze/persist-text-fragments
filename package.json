@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "test": "./node_modules/.bin/ts-mocha ./test/**/*.ts",
     "check": "npm-check --skip-unused",
     "dev": "nodemon -e ts --exec \"npm run build\"",
     "watch:test": "npm run test -- --auto-watch --no-single-run",
@@ -15,6 +16,7 @@
     "clean:build": "rimraf build",
     "clean:dist": "rimraf dist",
     "clean:release": "rimraf release",
+    "prebuild": "npm test",
     "build": "npm run build:ts",
     "build:release": "cross-env NODE_ENV=production npm run build",
     "build:package": "cross-env NODE_ENV=package npm run build",
